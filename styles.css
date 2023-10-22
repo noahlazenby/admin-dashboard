@@ -20,6 +20,7 @@ li {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
+    min-height: 15vh;
     
 }
 
@@ -40,6 +41,17 @@ li {
     gap: 1rem;
 }
 
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.announcements-trending-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr;
+}
 
 .card, .announcements, .trending {
     border-radius: 8px;
@@ -59,4 +71,29 @@ li {
 
 #trending-title {
     place-self: start;
+}
+
+.searchbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#search-box {
+    border-radius: 8px;
+    background-color: #e2e8f0
+}
+ 
+ul > li {
+    padding: 10px 0;
+    list-style: none;
+    font-size: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.svg {
+    fill: #f8fafc;
 }

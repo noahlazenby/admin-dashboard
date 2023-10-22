@@ -34,23 +34,29 @@ li {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #e2e8f0;
     padding: 1rem;
     gap: 1rem;
 }
 
-.card,
-.announcements,
-.trending {
-    border-left-style: solid;
-    border-left-width: 8px;
-    border-left-color: #fb923c;
+
+.card, .announcements, .trending {
     border-radius: 8px;
     padding: 1rem;
     background-color: #f8fafc;
 }
 
+.card {
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-left-color: #fb923c;
+}
+
 #card-title {
     grid-column: 1 / 3;
+}
+
+#trending-title {
+    place-self: start;
 }

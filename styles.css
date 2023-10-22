@@ -19,7 +19,7 @@ li {
     background-color: #f8fafc;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    display: grid;
+    display: flex;
     min-height: 15vh;
     
 }
@@ -74,13 +74,13 @@ li {
 }
 
 .searchbar {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
 }
 
 #search-box {
-    border-radius: 8px;
-    background-color: #e2e8f0
+    border-radius: 16px;
+    background-color: #e2e8f0;
+    height: 2rem;
 }
  
 ul > li {
@@ -92,8 +92,4 @@ ul > li {
     gap: 20px;
     justify-content: start;
     align-items: center;
-}
-
-.svg {
-    fill: #f8fafc;
 }
